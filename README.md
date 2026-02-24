@@ -68,13 +68,13 @@ Ajudar iniciantes e usuários de IA a:
 
 ## Arquivos principais para manutenção
 
-- `pq/js/script.js`
+- `js/script.js`
   - dados de técnicas, exemplos, busca/filtros e interações da página principal
-- `pq/js/paginas-categorias.js`
+- `js/paginas-categorias.js`
   - configuração e renderização das páginas de categoria
-- `pq/js/glossario.js`
+- `js/glossario.js`
   - termos, categorias e filtro do glossário
-- `pq/index.html`
+- `index.html`
   - estrutura da home e textos fixos da trilha
 
 ## Como executar
