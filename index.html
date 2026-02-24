@@ -1,0 +1,805 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inteligência Artificial: Como Fazer a Pergunta Certa? | Guia Prático</title>
+  <meta name="description" content="Guia prático para aprender a fazer perguntas melhores para IA, com fundamentos, exemplos, refinamento e uso responsável." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <div class="formas-fundo" aria-hidden="true">
+    <span class="forma forma-1"></span>
+    <span class="forma forma-2"></span>
+    <span class="forma forma-3"></span>
+  </div>
+
+  <nav class="navbar navbar-expand-xl barra-topo sticky-top" aria-label="Navegação principal">
+    <div class="container py-1">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <span class="marca-icone">IA</span>
+        <span class="marca-texto">IA: Pergunta Certa</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-principal">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Módulos</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="#modulos">Visão geral dos módulos</a></li>
+              <li><a class="dropdown-item" href="#fundamentos">Módulo 1 | Fundamentos</a></li>
+              <li><a class="dropdown-item" href="#tecnicas">Módulo 2 | Técnicas</a></li>
+              <li><a class="dropdown-item" href="#gerador">Módulo 3 | Prática guiada</a></li>
+              <li><a class="dropdown-item" href="#boas-praticas">Módulo 4 | Uso consciente</a></li>
+              <li><a class="dropdown-item" href="#quiz-avaliativo">Módulo 5 | Quiz e revisão</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="categoria-bases.html">Bases e estrutura</a></li>
+              <li><a class="dropdown-item" href="categoria-shots.html">Técnicas por shots</a></li>
+              <li><a class="dropdown-item" href="categoria-raciocinio.html">Raciocínio e encadeamento</a></li>
+              <li><a class="dropdown-item" href="categoria-controle.html">Níveis de controle</a></li>
+              <li><a class="dropdown-item" href="categoria-qualidade.html">Qualidade e verificação</a></li>
+              <li><a class="dropdown-item" href="categoria-interacao.html">Interação e refinamento guiado</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Prática</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="#gerador">Construtor rápido</a></li>
+              <li><a class="dropdown-item" href="#debug-prompts">Debug de perguntas e prompts</a></li>
+              <li><a class="dropdown-item" href="#interativo-avancado">Interativo avançado</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conteúdo</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="como-ia-funciona.html">Como a IA interpreta perguntas</a></li>
+              <li><a class="dropdown-item" href="glossario-ia.html">Glossário da pergunta certa em IA</a></li>
+              <li><a class="dropdown-item" href="#resumo-principal">Resumo: como fazer a pergunta certa</a></li>
+              <li><a class="dropdown-item" href="#recursos">Complementos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="secao-hero">
+    <div class="container py-5 py-lg-6">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-12">
+          <span class="etiqueta mb-3">Guia prático para iniciantes</span>
+          <h1 class="display-5 fw-bold mb-3">INTELIGÊNCIA ARTIFICIAL: COMO FAZER A PERGUNTA CERTA?</h1>
+          <p class="lead mb-4">Aprenda a transformar pedidos vagos em perguntas claras, úteis e verificáveis para obter respostas melhores da IA no estudo, no trabalho e no dia a dia.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#roteiro" class="btn btn-ia btn-lg">Ver trilha de estudo</a>
+            <a href="#tecnicas" class="btn btn-outline-light btn-lg">Explorar exemplos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="modulos" class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <h2 class="titulo-secao">Como este guia está organizado para aprender a perguntar melhor</h2>
+            <p class="texto-secao">A proposta combina fundamentos, prática guiada e revisão. Cada módulo ajuda você a transformar perguntas vagas em instruções claras, com contexto, foco e formato de resposta.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">Perfil do público</h3>
+                <p class="mb-0">Iniciantes e pessoas que já usam IA, mas querem melhorar a qualidade das respostas a partir de perguntas mais bem formuladas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="roteiro" class="row g-3 mt-1">
+          <div class="col-md-6 col-xl-3">
+            <article class="card card-modulo h-100">
+              <div class="card-body">
+                <span class="badge text-bg-light">Módulo 1 | 40 min</span>
+                <h3 class="h5 mt-3">Entender a pergunta vaga</h3>
+                <p>Reconhecer por que respostas genéricas acontecem e como a falta de contexto afeta a qualidade da saída.</p>
+                <p class="mb-0 pequeno"><strong>Situação:</strong> "Se a IA não conhece seu cenário, como ela vai acertar?"</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <article class="card card-modulo h-100">
+              <div class="card-body">
+                <span class="badge text-bg-light">Módulo 2 | 60 min</span>
+                <h3 class="h5 mt-3">Fundamentos da pergunta certa</h3>
+                <p>Objetivo, contexto, público, formato, restrições e exemplos. Comparação entre pergunta fraca e pergunta forte.</p>
+                <p class="mb-0 pequeno"><strong>Situação:</strong> reescrever perguntas confusas em versões úteis.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <article class="card card-modulo h-100">
+              <div class="card-body">
+                <span class="badge text-bg-light">Módulo 3 | 80 min</span>
+                <h3 class="h5 mt-3">Técnicas para refinar perguntas</h3>
+                <p>Shots, encadeamento, verificação, autorreflexão e controle de saída para diferentes objetivos.</p>
+                <p class="mb-0 pequeno"><strong>Situação:</strong> prática com perguntas copiáveis e adaptáveis.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <article class="card card-modulo h-100">
+              <div class="card-body">
+                <span class="badge text-bg-light">Módulo 4 | 60 min</span>
+                <h3 class="h5 mt-3">Aplicação, revisão e próximos passos</h3>
+                <p>Montar um fluxo de perguntas para um caso real, revisar resultados e aplicar uso responsável da IA.</p>
+                <p class="mb-0 pequeno"><strong>Situação:</strong> criar um roteiro pessoal de perguntas e critérios de revisão.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fundamentos" class="py-5 secao-destaque-clara">
+      <div class="container">
+        <span class="etiqueta-modulo">Módulo 1 | Fundamentos</span>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7">
+            <h2 class="titulo-secao">Fundamentos da pergunta certa</h2>
+            <p class="texto-secao">Quanto melhor a pergunta, melhor tende a ser a resposta. Em IA, perguntar bem é construir um briefing claro: objetivo, contexto e formato esperado.</p>
+
+            <div class="accordion" id="acordeaoFundamentos">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fundamentoUm" aria-expanded="true" aria-controls="fundamentoUm">O que significa fazer a pergunta certa?</button>
+                </h3>
+                <div id="fundamentoUm" class="accordion-collapse collapse show" data-bs-parent="#acordeaoFundamentos">
+                  <div class="accordion-body">
+                    É formular um pedido que deixe claro o que você quer, para quem é a resposta e qual formato será mais útil.
+                    <strong>Analogia:</strong> como pedir um serviço: se você não explica objetivo e detalhes, a chance de retrabalho aumenta.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fundamentoDois" aria-expanded="false" aria-controls="fundamentoDois">Por que contexto e público-alvo mudam a resposta?</button>
+                </h3>
+                <div id="fundamentoDois" class="accordion-collapse collapse" data-bs-parent="#acordeaoFundamentos">
+                  <div class="accordion-body">
+                    Sem contexto, a IA tende a responder de forma genérica. Com público-alvo, cenário e objetivo, a resposta fica mais aderente à sua necessidade real.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fundamentoTres" aria-expanded="false" aria-controls="fundamentoTres">Como evoluir perguntas na prática?</button>
+                </h3>
+                <div id="fundamentoTres" class="accordion-collapse collapse" data-bs-parent="#acordeaoFundamentos">
+                  <div class="accordion-body">
+                    Use o ciclo <strong>perguntar → testar → avaliar → refinar</strong>. Pequenos ajustes de contexto, formato ou restrições costumam melhorar muito a utilidade da resposta.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <aside class="painel-checklist h-100">
+              <h3 class="h5 mb-3">Checklist da pergunta certa</h3>
+              <ul class="lista-checklist">
+                <li><input type="checkbox" id="check1" /> <label for="check1">Objetivo claro em uma frase.</label></li>
+                <li><input type="checkbox" id="check2" /> <label for="check2">Público-alvo definido.</label></li>
+                <li><input type="checkbox" id="check3" /> <label for="check3">Contexto mínimo necessário.</label></li>
+                <li><input type="checkbox" id="check4" /> <label for="check4">Formato de resposta explícito.</label></li>
+                <li><input type="checkbox" id="check5" /> <label for="check5">Limites e critérios de qualidade.</label></li>
+                <li><input type="checkbox" id="check6" /> <label for="check6">Validação final (fatos, tom e clareza).</label></li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnicas" class="py-5">
+      <div class="container">
+        <span class="etiqueta-modulo">Módulo 2 | Técnicas</span>
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+          <div>
+            <h2 class="titulo-secao mb-1">Biblioteca de técnicas para construir perguntas melhores</h2>
+            <p class="texto-secao mb-0">Conteúdo didático com fundamentos, analogias simples, exemplos do dia a dia e desafios prontos para praticar a formulação de perguntas.</p>
+          </div>
+          <span class="selo-total" id="totalTecnicas">0 técnicas</span>
+        </div>
+
+        <div class="row g-3 filtros">
+          <div class="col-md-6 col-lg-5">
+            <label class="form-label" for="filtroBusca">Buscar técnica</label>
+            <input class="form-control" id="filtroBusca" type="search" placeholder="Ex.: CoT, persona, few-shot..." />
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <label class="form-label" for="filtroCategoria">Filtrar por categoria</label>
+            <select class="form-select" id="filtroCategoria">
+              <option value="todas">Todas as categorias</option>
+              <option value="bases">Bases e estrutura</option>
+              <option value="shots">Técnicas por shots</option>
+              <option value="raciocinio">Raciocínio e encadeamento</option>
+              <option value="controle">Níveis de controle</option>
+              <option value="qualidade">Verificação e refinamento</option>
+              <option value="interacao">Interação e refinamento guiado</option>
+            </select>
+          </div>
+          <div class="col-lg-3 d-flex align-items-end">
+            <button id="botaoLimparFiltros" class="btn btn-outline-secondary w-100">Limpar filtros</button>
+          </div>
+        </div>
+
+        <div class="secao-links-categoria mt-4">
+          <h3 class="h5 mb-2">Explorar técnicas por categoria</h3>
+          <p class="mb-3">Cada categoria tem uma página dedicada com fundamentos, campos de aplicação e exemplos práticos para adaptar ao seu contexto.</p>
+          <div class="row g-3">
+            <div class="col-md-6 col-xl-4">
+              <a class="link-categoria" href="categoria-bases.html">
+                <h4 class="h6">Bases e Estrutura</h4>
+                <p class="mb-0">Clareza, contexto, persona e delimitadores.</p>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <a class="link-categoria" href="categoria-shots.html">
+                <h4 class="h6">Técnicas por Shots</h4>
+                <p class="mb-0">Zero-shot, one-shot e few-shot.</p>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <a class="link-categoria" href="categoria-raciocinio.html">
+                <h4 class="h6">Raciocínio e Encadeamento</h4>
+                <p class="mb-0">CoT, ToT, ReAct e encadeamento de perguntas/prompts.</p>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <a class="link-categoria" href="categoria-controle.html">
+                <h4 class="h6">Níveis de Controle</h4>
+                <p class="mb-0">Complexidade, tom, detalhe, originalidade e mais.</p>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <a class="link-categoria" href="categoria-qualidade.html">
+                <h4 class="h6">Qualidade e Verificação</h4>
+                <p class="mb-0">CoVe, KD-CoT, self-refine e autorreflexão.</p>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <a class="link-categoria" href="categoria-interacao.html">
+                <h4 class="h6">Interação e Refinamento Guiado</h4>
+                <p class="mb-0">Pergunta interativa, metaprompts e engenharia automática.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="gradeTecnicas" class="row g-4 mt-1"></div>
+      </div>
+    </section>
+
+    <section id="gerador" class="py-5 secao-destaque-clara">
+      <div class="container">
+        <span class="etiqueta-modulo">Módulo 3 | Prática guiada</span>
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <h2 class="titulo-secao">Construtor rápido da pergunta certa</h2>
+            <p class="texto-secao">Monte uma pergunta estruturada em menos de 2 minutos. Depois, copie, teste em uma IA e compare os resultados.</p>
+            <div class="card card-bloco cartao-dica">
+              <div class="card-body">
+                <h3 class="h6">Dica didática</h3>
+                <p class="mb-0">Pense na pergunta como um pedido para alguém sem contexto. O que não estiver escrito vira suposição.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form id="formularioGerador" class="row g-3" novalidate>
+              <div class="col-md-6">
+                <label for="campoObjetivo" class="form-label">Objetivo</label>
+                <input type="text" class="form-control" id="campoObjetivo" placeholder="Ex.: Organizar uma viagem curta em família" required />
+              </div>
+              <div class="col-md-6">
+                <label for="campoPublico" class="form-label">Público-alvo</label>
+                <input type="text" class="form-control" id="campoPublico" placeholder="Ex.: Pessoas adultas sem experiência no tema" required />
+              </div>
+              <div class="col-md-6">
+                <label for="campoContexto" class="form-label">Contexto</label>
+                <input type="text" class="form-control" id="campoContexto" placeholder="Ex.: Viagem de até 3 dias com orçamento limitado" />
+              </div>
+              <div class="col-md-6">
+                <label for="campoFormato" class="form-label">Formato de saída</label>
+                <input type="text" class="form-control" id="campoFormato" placeholder="Ex.: checklist em tópicos com prioridades" />
+              </div>
+              <div class="col-md-6">
+                <label for="campoTom" class="form-label">Tom e estilo</label>
+                <input type="text" class="form-control" id="campoTom" placeholder="Ex.: simples, prático e amigável" />
+              </div>
+              <div class="col-md-6">
+                <label for="campoRestricoes" class="form-label">Restrições</label>
+                <input type="text" class="form-control" id="campoRestricoes" placeholder="Ex.: orçamento máximo de R$ 1.000" />
+              </div>
+              <div class="col-12">
+                <label for="campoTecnica" class="form-label">Técnica sugerida</label>
+                <select id="campoTecnica" class="form-select">
+                  <option value="Nenhuma">Nenhuma</option>
+                  <option value="Zero-shot">Zero-shot</option>
+                  <option value="Few-shot">Few-shot</option>
+                  <option value="CoT">Chain-of-Thought (CoT)</option>
+                  <option value="CoVe">Chain-of-Verification (CoVe)</option>
+                  <option value="Autorreflexão">Autorreflexão</option>
+                  <option value="Prompt Interativo">Prompt Interativo</option>
+                </select>
+              </div>
+              <div class="col-12 d-flex flex-wrap gap-2">
+                <button type="submit" class="btn btn-ia">Gerar pergunta/prompt</button>
+                <button type="button" id="botaoExemploGerador" class="btn btn-outline-secondary">Preencher exemplo</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="form-label" for="saidaPrompt">Pergunta/prompt gerado</label>
+            <textarea id="saidaPrompt" class="form-control" rows="8" placeholder="Sua pergunta/prompt aparecerá aqui..."></textarea>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <button type="button" id="botaoCopiarPromptGerado" class="btn btn-outline-primary">Copiar pergunta/prompt gerado</button>
+              <button type="button" id="botaoLimparPromptGerado" class="btn btn-outline-secondary">Limpar</button>
+            </div>
+            <div class="caixa-saida-mais mt-3" id="saidaMaisGerador">
+              <h3 class="h6 mb-2">Saída+ | Informações complementares</h3>
+              <p class="mb-2">Depois de gerar a pergunta/prompt, valide se ela contém objetivo claro, contexto real e formato de saída definido.</p>
+              <p class="mb-0">Dica: teste 2 versões com pequenas mudanças de tom para comparar resultados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="debug-prompts" class="py-5">
+      <div class="container">
+        <span class="etiqueta-modulo">Módulo 3 | Prática guiada</span>
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <h2 class="titulo-secao">Debug de perguntas e prompts</h2>
+            <p class="texto-secao">Cole uma pergunta/prompt e receba diagnóstico técnico: clareza, contexto, público, formato, restrições e estrutura. Depois gere uma versão refinada pronta para teste.</p>
+            <div class="card card-bloco bloco-laboratorio">
+              <div class="card-body">
+                <h3 class="h6">Pontos de depuração</h3>
+                <ul class="mb-0">
+                  <li>Objetivo explícito em verbo de ação.</li>
+                  <li>Contexto e público-alvo definidos.</li>
+                  <li>Formato de saída especificado.</li>
+                  <li>Restrições e critérios de qualidade.</li>
+                  <li>Metatags para estruturar entradas.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-12">
+                <label class="form-label" for="entradaPromptDebug">Pergunta/prompt para depuração</label>
+                <textarea id="entradaPromptDebug" class="form-control" rows="7" placeholder="Cole aqui a pergunta/prompt que você quer depurar."></textarea>
+              </div>
+              <div class="col-12 d-flex flex-wrap gap-2">
+                <button type="button" id="botaoAnalisarPromptDebug" class="btn btn-ia">Analisar e depurar</button>
+                <button type="button" id="botaoExemploPromptDebug" class="btn btn-outline-secondary">Preencher exemplo</button>
+              </div>
+              <div class="col-12">
+                <div class="caixa-diagnostico" id="saidaDiagnosticoPromptDebug">
+                  Digite uma pergunta/prompt e clique em "Analisar e depurar" para ver o diagnóstico.
+                </div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="saidaPromptDepurado">Pergunta/prompt refinado com metatags</label>
+                <textarea id="saidaPromptDepurado" class="form-control" rows="9" placeholder="A versão depurada será exibida aqui."></textarea>
+                <div class="d-flex flex-wrap gap-2 mt-2">
+                  <button type="button" id="botaoCopiarPromptDepurado" class="btn btn-outline-primary">Copiar pergunta/prompt refinado</button>
+                  <button type="button" id="botaoLimparPromptDepurado" class="btn btn-outline-secondary">Limpar</button>
+                </div>
+                <div class="caixa-saida-mais mt-3" id="saidaMaisDebug">
+                  <h3 class="h6 mb-2">Saída+ | Informações complementares</h3>
+                  <p class="mb-2">Use o diagnóstico para revisar primeiro os itens com selo "AJUSTAR".</p>
+                  <p class="mb-0">Regra prática: quanto menos ambiguidade no pedido, maior a consistência da resposta.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interativo-avancado" class="py-5 secao-destaque-clara">
+      <div class="container">
+        <span class="etiqueta-modulo">Módulo 3 | Prática guiada</span>
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <h2 class="titulo-secao">Pergunta interativa avançada</h2>
+            <p class="texto-secao">Construa perguntas mais complexas para captar dados faltantes com refinamento guiado e metatags estruturadas, gerando respostas mais adequadas ao cenário real.</p>
+            <div class="card card-bloco bloco-laboratorio">
+              <div class="card-body">
+                <h3 class="h6">Metatags recomendadas</h3>
+                <p class="mb-2"><code>&lt;objetivo&gt;</code> <code>&lt;publico_alvo&gt;</code> <code>&lt;contexto&gt;</code> <code>&lt;dados_disponiveis&gt;</code></p>
+                <p class="mb-0"><code>&lt;restricoes&gt;</code> <code>&lt;formato_saida&gt;</code> <code>&lt;criterios_qualidade&gt;</code></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form id="formularioInterativoAvancado" class="row g-3" novalidate>
+              <div class="col-md-6">
+                <label class="form-label" for="campoSetorInterativo">Área/Setor</label>
+                <input type="text" class="form-control" id="campoSetorInterativo" placeholder="Ex.: Educação profissional" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="campoObjetivoInterativo">Objetivo principal</label>
+                <input type="text" class="form-control" id="campoObjetivoInterativo" placeholder="Ex.: Criar trilha introdutória de IA" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="campoPublicoInterativo">Público-alvo</label>
+                <input type="text" class="form-control" id="campoPublicoInterativo" placeholder="Ex.: Turma iniciante de 18 a 35 anos" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="campoNivelInterativo">Nível do público</label>
+                <select class="form-select" id="campoNivelInterativo">
+                  <option value="iniciante">Iniciante</option>
+                  <option value="intermediario">Intermediário</option>
+                  <option value="avancado">Avançado</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="campoFormatoInterativo">Formato da resposta</label>
+                <input type="text" class="form-control" id="campoFormatoInterativo" placeholder="Ex.: plano em etapas + checklist" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="campoTomInterativo">Tom e estilo</label>
+                <input type="text" class="form-control" id="campoTomInterativo" placeholder="Ex.: didático, objetivo e acolhedor" />
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="campoDadosInterativo">Dados já disponíveis</label>
+                <textarea id="campoDadosInterativo" class="form-control" rows="3" placeholder="Ex.: tempo total, número de participantes, recursos disponíveis..."></textarea>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="campoRestricoesInterativo">Restrições</label>
+                <input type="text" class="form-control" id="campoRestricoesInterativo" placeholder="Ex.: sem jargões, máx. 400 palavras" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="campoCriteriosInterativo">Critérios de qualidade</label>
+                <input type="text" class="form-control" id="campoCriteriosInterativo" placeholder="Ex.: clareza, aplicabilidade e exemplos reais" />
+              </div>
+              <div class="col-12 d-flex flex-wrap gap-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="checkMetatagsInterativo" checked />
+                  <label class="form-check-label" for="checkMetatagsInterativo">Usar metatags estruturadas</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="checkColetaInterativo" checked />
+                  <label class="form-check-label" for="checkColetaInterativo">Ativar coleta de dados faltantes</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="checkValidacaoInterativo" checked />
+                  <label class="form-check-label" for="checkValidacaoInterativo">Exigir validação de fatos críticos</label>
+                </div>
+              </div>
+              <div class="col-12 d-flex flex-wrap gap-2">
+                <button type="submit" class="btn btn-ia">Gerar pergunta interativa avançada</button>
+                <button type="button" id="botaoExemploInterativoAvancado" class="btn btn-outline-secondary">Preencher exemplo</button>
+              </div>
+            </form>
+
+            <div class="mt-3">
+              <label class="form-label" for="saidaInterativoAvancado">Pergunta interativa avançada gerada</label>
+              <textarea id="saidaInterativoAvancado" class="form-control" rows="10" placeholder="A pergunta avançada aparecerá aqui..."></textarea>
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                <button type="button" id="botaoCopiarInterativoAvancado" class="btn btn-outline-primary">Copiar pergunta avançada</button>
+                <button type="button" id="botaoLimparInterativoAvancado" class="btn btn-outline-secondary">Limpar</button>
+              </div>
+              <div class="caixa-saida-mais mt-3" id="saidaMaisInterativo">
+                <h3 class="h6 mb-2">Saída+ | Informações complementares</h3>
+                <p class="mb-2">Se o usuário não tiver dados suficientes, mantenha o fluxo de perguntas numeradas ativo.</p>
+                <p class="mb-0">Finalize sempre com confirmação de entendimento e próximos passos objetivos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="boas-praticas" class="py-5">
+      <div class="container">
+        <span class="etiqueta-modulo">Módulo 4 | Uso consciente</span>
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <h2 class="titulo-secao">Boas práticas ao perguntar e usar respostas de IA</h2>
+            <p class="texto-secao">Perguntar bem é só metade do trabalho. A outra metade é validar respostas, ajustar pedidos e manter responsabilidade humana nas decisões.</p>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <article class="card card-pratica h-100">
+                  <div class="card-body">
+                    <h3 class="h6">Verifique fatos críticos</h3>
+                    <p>Se a resposta envolve saúde, direito, finanças ou políticas internas, valide em fontes confiáveis antes de usar.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="card card-pratica h-100">
+                  <div class="card-body">
+                    <h3 class="h6">Proteja dados pessoais</h3>
+                    <p>Evite inserir dados sensíveis. Sempre que possível, anonimize informações antes de perguntar.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="card card-pratica h-100">
+                  <div class="card-body">
+                    <h3 class="h6">Revise a pergunta quando a resposta falhar</h3>
+                    <p>Antes de trocar de ferramenta, ajuste contexto, formato e restrições. Muitas falhas vêm da formulação do pedido.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="card card-pratica h-100">
+                  <div class="card-body">
+                    <h3 class="h6">Mantenha supervisão humana</h3>
+                    <p>Use a IA para acelerar análise e rascunhos, mas preserve decisão final, critérios e responsabilidade.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <aside class="painel-riscos h-100">
+              <h3 class="h5">Pergunta-chave de validação</h3>
+              <p>Antes de usar a resposta, pergunte: <strong>“Se isso estiver errado, qual o impacto?”</strong>. Essa checagem simples ajuda a decidir o nível de revisão necessário.</p>
+              <p class="mb-0">Ao finalizar, registre: pergunta usada, técnica aplicada, ajustes feitos e como você validou o resultado.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="py-5 secao-destaque-clara">
+      <div class="container">
+        <span class="etiqueta-modulo">Módulo 4 | Complementos</span>
+        <h2 class="titulo-secao">Complementos e próximos passos</h2>
+        <p class="texto-secao">Materiais para aprofundar a prática de perguntas para IA após o estudo inicial.</p>
+
+        <div class="row g-3">
+          <div class="col-md-6 col-xl-3">
+            <a class="link-recurso" href="https://openai.com/policies/usage-policies/" target="_blank" rel="noopener noreferrer">
+              <h3 class="h6">Políticas de uso</h3>
+              <p class="mb-0">Diretrizes de uso responsável e seguro para sistemas de IA.</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <a class="link-recurso" href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank" rel="noopener noreferrer">
+              <h3 class="h6">Guia de prompting</h3>
+              <p class="mb-0">Referências para estruturar instruções, exemplos e refinamentos.</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <a class="link-recurso" href="https://www.promptingguide.ai/" target="_blank" rel="noopener noreferrer">
+              <h3 class="h6">Prompting Guide</h3>
+              <p class="mb-0">Biblioteca de técnicas e padrões de perguntas para diferentes tarefas.</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <a class="link-recurso" href="https://oecd.ai/en/ai-principles" target="_blank" rel="noopener noreferrer">
+              <h3 class="h6">Princípios de IA</h3>
+              <p class="mb-0">Boas práticas para confiança, transparência e governança no uso da IA.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-4 card card-bloco">
+          <div class="card-body">
+            <h3 class="h6">Complementos sugeridos para continuar praticando</h3>
+            <p class="mb-2">1) Transforme 10 perguntas vagas do seu contexto em versões estruturadas.</p>
+            <p class="mb-2">2) Crie um banco de perguntas-modelo por área de atuação.</p>
+            <p class="mb-0">3) Faça revisões semanais: pergunta inicial, versão refinada e aprendizado obtido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz-avaliativo" class="py-5">
+      <div class="container">
+        <span class="etiqueta-modulo">Módulo 5 | Avaliação</span>
+        <h2 class="titulo-secao">Quiz avaliativo</h2>
+        <p class="texto-secao">Responda às questões para verificar a compreensão dos fundamentos de formulação de perguntas e técnicas de refinamento.</p>
+
+        <form id="formularioQuizAvaliativo" class="row g-3 mt-1" novalidate>
+          <div class="col-12">
+            <article class="card card-bloco pergunta-quiz" data-pergunta="1" data-correta="b">
+              <div class="card-body">
+                <h3 class="h6">1) Qual elemento mais reduz ambiguidade em um prompt?</h3>
+                <div class="opcoes-quiz">
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta1" value="a" /> Usar termos técnicos complexos.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta1" value="b" /> Definir objetivo, contexto e formato de saída.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta1" value="c" /> Escrever o prompt sem restrições.</label>
+                </div>
+                <p class="feedback-pergunta mb-0"></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="card card-bloco pergunta-quiz" data-pergunta="2" data-correta="c">
+              <div class="card-body">
+                <h3 class="h6">2) Em poucas palavras, o que diferencia few-shot de zero-shot?</h3>
+                <div class="opcoes-quiz">
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta2" value="a" /> Few-shot usa menos contexto e zero-shot usa mais.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta2" value="b" /> Não existe diferença prática entre as duas técnicas.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta2" value="c" /> Few-shot usa exemplos prévios, zero-shot não usa exemplos.</label>
+                </div>
+                <p class="feedback-pergunta mb-0"></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="card card-bloco pergunta-quiz" data-pergunta="3" data-correta="a">
+              <div class="card-body">
+                <h3 class="h6">3) Qual é a melhor ação inicial em um processo de debug de prompt?</h3>
+                <div class="opcoes-quiz">
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta3" value="a" /> Verificar clareza da tarefa, contexto e público-alvo.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta3" value="b" /> Aumentar o tamanho da resposta sem revisar o pedido.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta3" value="c" /> Trocar de técnica antes de analisar o problema.</label>
+                </div>
+                <p class="feedback-pergunta mb-0"></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="card card-bloco pergunta-quiz" data-pergunta="4" data-correta="b">
+              <div class="card-body">
+                <h3 class="h6">4) Para que servem metatags como &lt;objetivo&gt; e &lt;contexto&gt;?</h3>
+                <div class="opcoes-quiz">
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta4" value="a" /> Decorar o texto e deixar o prompt mais longo.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta4" value="b" /> Separar informações e estruturar a instrução com mais precisão.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta4" value="c" /> Impedir completamente erros de resposta.</label>
+                </div>
+                <p class="feedback-pergunta mb-0"></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12">
+            <article class="card card-bloco pergunta-quiz" data-pergunta="5" data-correta="a">
+              <div class="card-body">
+                <h3 class="h6">5) Qual prática representa uso consciente de IA?</h3>
+                <div class="opcoes-quiz">
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta5" value="a" /> Validar fatos críticos e revisar possíveis vieses antes de usar a resposta.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta5" value="b" /> Confiar integralmente na primeira resposta em todo cenário.</label>
+                  <label class="form-check opcao-quiz"><input class="form-check-input" type="radio" name="quizPergunta5" value="c" /> Publicar respostas automaticamente sem revisão humana.</label>
+                </div>
+                <p class="feedback-pergunta mb-0"></p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 d-flex flex-wrap gap-2">
+            <button type="button" id="botaoCorrigirQuiz" class="btn btn-ia">Corrigir quiz</button>
+            <button type="button" id="botaoReiniciarQuiz" class="btn btn-outline-secondary">Reiniciar</button>
+          </div>
+        </form>
+
+        <div id="resultadoQuiz" class="caixa-diagnostico mt-3">
+          Responda às 5 questões e clique em "Corrigir quiz" para ver seu resultado.
+        </div>
+      </div>
+    </section>
+
+    <section id="resumo-principal" class="py-5 secao-destaque-clara">
+      <div class="container">
+        <span class="etiqueta-modulo">Módulo 5 | Revisão final</span>
+        <h2 class="titulo-secao">Resumo: como fazer a pergunta certa</h2>
+        <p class="texto-secao">Use este resumo como guia rápido antes de escrever sua próxima pergunta para IA em uma situação real.</p>
+
+        <div class="row g-3">
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">1) Clareza vem primeiro</h3>
+                <p class="mb-0">A pergunta precisa dizer o que você quer e para qual finalidade.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">2) Contexto reduz ambiguidade</h3>
+                <p class="mb-0">Inclua cenário, dados disponíveis e limites para evitar respostas genéricas.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">3) Formato orienta a entrega</h3>
+                <p class="mb-0">Peça lista, tabela, passos, resumo ou checklist conforme a sua necessidade.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">4) Técnicas são ferramentas</h3>
+                <p class="mb-0">Use zero-shot, few-shot, CoT e verificação conforme o tipo de tarefa.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">5) Teste e refine</h3>
+                <p class="mb-0">Pequenas mudanças na pergunta podem melhorar muito o resultado final.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <article class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">6) Valide antes de usar</h3>
+                <p class="mb-0">Confira fatos críticos, tom e adequação antes de aplicar a resposta.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="caixa-saida-mais mt-4">
+          <h3 class="h6 mb-2">Roteiro rápido de revisão</h3>
+          <p class="mb-2">1) Releia o checklist da pergunta certa.</p>
+          <p class="mb-2">2) Refaça uma pergunta antiga usando contexto e formato de saída.</p>
+          <p class="mb-2">3) Teste versões diferentes e compare qual entrega mais valor.</p>
+          <p class="mb-0">4) Registre seus padrões de pergunta que funcionam melhor.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape py-4">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between gap-2">
+      <p class="mb-0">Guia educacional: <strong>Inteligência Artificial: Como Fazer a Pergunta Certa?</strong>.</p>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toastCopia" class="toast align-items-center texto-bg-sucesso border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="mensagemToast">Prompt copiado.</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Fechar"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+

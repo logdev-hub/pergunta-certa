@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Como a IA Interpreta Perguntas | IA: Pergunta Certa</title>
+  <meta name="description" content="Entenda como a IA interpreta perguntas, contexto e formato para gerar respostas mais úteis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-xl barra-topo sticky-top" aria-label="Navegacao principal">
+    <div class="container py-1">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="marca-icone">IA</span>
+        <span class="marca-texto">IA: Pergunta Certa</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu-principal">
+          <li class="nav-item"><a class="nav-link" href="index.html#inicio">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Modulos</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="index.html#modulos">Visao geral dos modulos</a></li>
+              <li><a class="dropdown-item" href="index.html#fundamentos">Modulo 1 | Fundamentos</a></li>
+              <li><a class="dropdown-item" href="index.html#tecnicas">Modulo 2 | Tecnicas</a></li>
+              <li><a class="dropdown-item" href="index.html#gerador">Modulo 3 | Pratica guiada</a></li>
+              <li><a class="dropdown-item" href="index.html#boas-praticas">Modulo 4 | Uso consciente</a></li>
+              <li><a class="dropdown-item" href="index.html#quiz-avaliativo">Modulo 5 | Quiz e revisao</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="categoria-bases.html">Bases e estrutura</a></li>
+              <li><a class="dropdown-item" href="categoria-shots.html">Tecnicas por shots</a></li>
+              <li><a class="dropdown-item" href="categoria-raciocinio.html">Raciocinio e encadeamento</a></li>
+              <li><a class="dropdown-item" href="categoria-controle.html">Niveis de controle</a></li>
+              <li><a class="dropdown-item" href="categoria-qualidade.html">Qualidade e verificacao</a></li>
+              <li><a class="dropdown-item" href="categoria-interacao.html">Interacao e refinamento guiado</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pratica</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="index.html#gerador">Construtor rapido</a></li>
+              <li><a class="dropdown-item" href="index.html#debug-prompts">Debug de perguntas e prompts</a></li>
+              <li><a class="dropdown-item" href="index.html#interativo-avancado">Interativo avancado</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conteudo</a>
+            <ul class="dropdown-menu menu-laboratorios">
+              <li><a class="dropdown-item" href="como-ia-funciona.html">Como a IA interpreta perguntas</a></li>
+              <li><a class="dropdown-item" href="glossario-ia.html">Glossario da pergunta certa em IA</a></li>
+              <li><a class="dropdown-item" href="index.html#resumo-principal">Resumo: como fazer a pergunta certa</a></li>
+              <li><a class="dropdown-item" href="index.html#recursos">Complementos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="cabecalho-categoria">
+    <div class="container">
+      <p class="etiqueta mb-2">Fundamentos da pergunta certa</p>
+      <h1 class="display-6 fw-bold mb-2">Como a IA interpreta perguntas</h1>
+      <p class="mb-0">Entenda por que contexto, objetivo e formato mudam a qualidade da resposta.</p>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <section class="container mb-4">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <article class="resumo-categoria h-100">
+            <h2 class="h5 mb-3">Visao tecnica (clara e objetiva)</h2>
+            <p>Modelos de linguagem geram texto com base em probabilidades aprendidas. Quando voce envia uma pergunta, a IA usa os sinais presentes no texto para prever uma resposta coerente.</p>
+            <p>Se faltam objetivo, contexto ou formato, o modelo precisa inferir muita coisa. Isso aumenta respostas genericas, extensas demais ou pouco aderentes ao seu caso.</p>
+            <p class="mb-0">Quando a pergunta e bem estruturada, voce reduz ambiguidade e aumenta a chance de uma saida util logo na primeira tentativa.</p>
+          </article>
+        </div>
+        <div class="col-lg-6">
+          <article class="resumo-categoria h-100">
+            <h2 class="h5 mb-3">Visao simplificada (analogia)</h2>
+            <p>Pense na IA como alguem rapido para escrever, mas sem conhecer sua realidade. Se voce pedir pouco, ela completa com suposicoes.</p>
+            <p>Se voce informa o objetivo, para quem e a resposta e como quer receber, a IA trabalha com menos incerteza.</p>
+            <p class="mb-0">A pergunta certa nao garante perfeicao, mas melhora bastante direcionamento, utilidade e tempo de revisao.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-4">
+      <div class="resumo-categoria">
+        <h2 class="h5 mb-3">Sinais que a IA usa na sua pergunta</h2>
+        <div class="row g-3">
+          <div class="col-md-6 col-xl-3">
+            <div class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">Objetivo</h3>
+                <p class="mb-0">Verbos como resumir, comparar, listar e analisar orientam o tipo de resposta.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">Contexto</h3>
+                <p class="mb-0">Cenario, dados e restricoes ajudam a evitar respostas genericas e pouco aplicaveis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">Publico</h3>
+                <p class="mb-0">Definir para quem a resposta se destina ajusta linguagem, profundidade e tom.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card card-bloco h-100">
+              <div class="card-body">
+                <h3 class="h6">Formato</h3>
+                <p class="mb-0">Lista, tabela, passos ou checklist tornam a saida mais util para execucao.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mb-4">
+      <div class="caixa-saida-mais">
+        <h2 class="h5 mb-2">Desafio aplicado</h2>
+        <p class="mb-2">Pegue uma pergunta vaga, como "me ajuda a estudar", e reescreva com objetivo, contexto, tempo disponivel e formato de resposta.</p>
+        <p class="mb-0">Depois compare as respostas e identifique quais elementos melhoraram a utilidade da saida.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="resumo-categoria">
+        <h2 class="h5 mb-3">Fluxo simplificado: pergunta -> resposta -> refinamento</h2>
+        <ol class="mb-0">
+          <li>Voce envia uma pergunta com objetivo, contexto e formato.</li>
+          <li>A IA interpreta os sinais e gera uma resposta provavel para aquele contexto.</li>
+          <li>Voce avalia clareza, aderencia e utilidade da resposta.</li>
+          <li>Se houver lacunas, ajusta a pergunta (mais contexto, restricoes ou exemplos).</li>
+          <li>Repete o ciclo ate obter uma resposta realmente aplicavel.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape py-4">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between gap-2">
+      <p class="mb-0">Fundamentos: como a IA interpreta perguntas.</p>
+      <p class="mb-0">Da teoria para a pratica com foco em perguntas melhores.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
